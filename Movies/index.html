@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Favorite Movies</title>
+<link rel="icon" href="../Images/am.jpg" type="image/jpg">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana;
+  padding: 10px;
+  background: #293241;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 10px;
+  padding-bottom: 0px;
+  text-align: center;
+  background: #293241;
+}
+div audio{
+  z-index:1; 
+  top:-30px; 
+  position:relative; 
+  display:inline-block;
+}
+div p::first-line {
+  font-variant:small-caps;
+  font-weight: bold;
+}
+::selection {
+  color: #e0fbfc;
+  background: #222935;
+}
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #313B4A;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #e0fbfc;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover:not(.active) {
+  background-color: #e0fbfc;
+  color: #313B4A;
+}
+
+.active {
+  background-color: #3d5a80;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #293241;
+  padding-left: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: #E9EAF4;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #E9EAF4;
+  margin-top: 20px;
+  color: #293241;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn, video, audio {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+
+<div class="header">
+  <video width="1010px" height="auto" padding="0" autoplay muted loop>
+  <source src="../Video,Audio/intro1.mp4" type="video/mp4">
+  <source src="../Video,Audio/intro1.ogg" type="video/ogg">  
+  Your browser does not support the video tag.
+</video>
+<center>
+<audio id="myaudio" src="../Video,Audio/bgm1.mp3" controls autoplay loop>
+  <p>If you are reading this, it is because your browser does not support the audio element.</p>
+  </audio>
+
+  <script>
+  var audio = document.getElementById("myaudio");
+  audio.volume = 0.2;
+  </script>
+</center>
+
+</div>
+
+
+
+
+<div class="topnav">
+  <a href="../index.html">Home</a>
+  <a href="index.html" class="active">Movies</a>
+  <a href="../Music H1/index.html">Songs</a>
+</div>
+
+<div class="row" style="color:#293241;">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>HOWL'S MOVING CASTLE</h2>
+      <h5>2004 ‧ Fantasy/Adventure ‧ 1h 59m</h5>
+      <div>
+      <video width="auto" height="500px" controls>
+      <source src="../Video,Audio/hmc.mp4" type="video/mp4">
+      <source src="../Video,Audio/hmc.ogg" type="video/ogg">  
+      Your browser does not support the video tag.
+      </video>
+      </div>
+      <p>Sophie (Emily Mortimer) has an uneventful life at her late father's hat shop, but all that changes when she befriends wizard Howl (Christian Bale), who lives in a magical flying castle. However, the evil Witch of Waste (Lauren Bacall) takes issue with their budding relationship and casts a spell on young Sophie, which ages her prematurely. Now Howl must use all his magical talents to battle the jealous hag and return Sophie to her former youth and beauty. <a href="https://soap2day.ac/MczozMDoiNjI1MXx8NDkuMTQ2LjY0LjEwfHwxNjQ1NjkwNTE3Ijs.html" style="color:#3d5a80; cursor:pointer;"><b>Watch Here</b></a></p>
+     </div>
+    <div class="card">
+      <h2>LA LA LAND</h2>
+      <h5>2016 ‧ Musical/Romance ‧ 2h 8m</h5>
+      <div>
+      <video width="auto" height="500px" controls>
+      <source src="../Video,Audio/lll.mp4" type="video/mp4">
+      <source src="../Video,Audio/lll.ogg" type="video/ogg">  
+      Your browser does not support the video tag.
+      </video>
+      </div>
+      <p>Sebastian (Ryan Gosling) and Mia (Emma Stone) are drawn together by their common desire to do what they love. But as success mounts they are faced with decisions that begin to fray the fragile fabric of their love affair, and the dreams they worked so hard to maintain in each other threaten to rip them apart. <a href="https://soap2day.ac/MczoyOToiMTU1fHw0OS4xNDYuNjQuMTB8fDE2NDU2OTA2OTUiOw.html" style="color:#3d5a80; cursor:pointer;"><b>Watch Here</b></a></p>
+   </div>
+    <div class="card">
+      <h2>BOHEMIAN RHAPSODY</h2>
+      <h5>2018 ‧ Musical/Drama ‧ 2h 14m</h5>
+      <div>
+      <video width="auto" height="500px" controls>
+      <source src="../Video,Audio/br.mp4" type="video/mp4">
+      <source src="../Video,Audio/br.ogg" type="video/ogg">  
+      Your browser does not support the video tag.
+      </video>
+      </div>
+      <p>Freddie Mercury -- the lead singer of Queen -- defies stereotypes and convention to become one of history's most beloved entertainers. The band's revolutionary sound and popular songs lead to Queen's meteoric rise in the 1970s. After leaving the group to pursue a solo career, Mercury reunites with Queen for the benefit concert Live Aid -- resulting in one of the greatest performances in rock 'n' roll history. <a href="https://soap2day.ac/MczozMjoiNTUzN3x8MTEwLjU0LjIzMC4xNTR8fDE2NDU3OTU3NzMiOw.html" style="color:#3d5a80; cursor:pointer;"><b>Watch Here</b></a></p>
+   </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <div>
+      <p>Howl and Sophie<br>Howl's Moving Castle</p>
+      <img src="../Images/hmc1.jpg" style="height:540px; width:auto;">
+      <pre>Photo Credits: Pinterest</pre>
+      </div>
+    </div>
+    <div class="card">
+      <div>
+      <p>Freddie Mercury<br>Bohemian Rhapsody</p>
+      <img src="../Images/br.gif" style="height:300px; width:auto;">
+      <pre>Photo Credits: Tenor</pre>
+      </div>
+    </div>
+    <div class="card">
+      <div>
+      <p>Kiki<br>Kiki's Delivery Service</p>
+      <img src="../Images/kk.gif" style="height:330px; width:auto;">
+      <pre>Photo Credits: SeerLight</pre>
+      </div>
+    </div>
+    <div class="card">
+      <div>
+      <p>Mia and Sebastian<br>La La Land</p>
+      <img src="../Images/c10.gif" style="height:150px; width:auto;">
+      <pre>Photo Credits: Dancin' Dan On Film</pre>
+      </div>
+    </div>
+    <div class="card">
+      <div>
+      <p>Shizuku<br>Whisper Of The Heart</p>
+      <img src="../Images/woth.gif" style="height:120px; width:auto;">
+      <pre>Photo Credits: WiffleGif</pre>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>All Rights Reserved © 2022</h2>
+  <div style="font-size:18px;">Vic Danielle L. Bontia<br>BSCpE 3A DAY</div>
+</div>
+
+</body>
+</html>
+
+

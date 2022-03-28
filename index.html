@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Bontia, Vic Danielle L.</title>
+<link rel="icon" href="../Website/Images/am.jpg" type="image/jpg">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, serif;
+  padding: 10px;
+  background: #293241;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 10px;
+  padding-bottom: 0px;
+  text-align: center;
+  background: #293241;
+}
+div audio {
+  z-index:1;
+  top:-30px; 
+  position:relative; 
+  display:inline-block;
+}
+div p::first-line {
+  font-variant:small-caps;
+  font-weight: bold;
+}
+::selection {
+  color: #e0fbfc;
+  background: #222935;
+}
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #313B4A;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #e0fbfc;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover:not(.active) {
+  background-color: #e0fbfc;
+  color: #313B4A;
+}
+
+.active {
+  background-color: #3d5a80;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #293241;
+  padding-left: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: #E9EAF4;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #E9EAF4;
+  margin-top: 20px;
+  color: #293241;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn, video, audio {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+
+<div class="header">
+  <video width="1010px" height="auto" padding="0" autoplay muted loop>
+  <source src="../Website/Video,Audio/intro1.mp4" type="video/mp4">
+  <source src="../Website/Video,Audio/intro1.ogg" type="video/ogg">  
+  Your browser does not support the video tag.
+</video>
+<center>
+<audio id="myaudio" src="../Website/Video,Audio/bgm1.mp3" controls autoplay loop>
+  <p>If you are reading this, it is because your browser does not support the audio element.</p>
+  </audio>
+
+  <script>
+  var audio = document.getElementById("myaudio");
+  audio.volume = 0.2;
+  </script>
+</center>
+
+</div>
+
+
+
+
+<div class="topnav">
+  <a href="../Website/index.html" class="active">Home</a>
+  <a href="../Website/Movies/index.html">Movies</a>
+  <a href="../Website/Music H1/index.html">Songs</a>
+</div>
+
+<div class="row" style="color:#293241;">
+  <div class="leftcolumn">
+    <div class="card" style="width:100%; height:570px;">
+      <h2>FEELING MY OATS</h2>
+      <h5>A myriad of selfies. September 15, 2021</h5>
+      <div>
+      <img src="../Website/Images/h1.gif" style="height:auto; width:65%;">
+      <p>Lately, I have been apathetic with most things: being alone, getting old, life. But in the slightest fraction of a moment that I get to feel my oats, I flaunt them!
+True enough that I rarely get to feel this way–when I find time to take photos of myself. <b><u style="color:#3d5a80; cursor:pointer;">Read More...</u></b>
+      </p>
+      </div>  
+    </div>
+    <div class="card" style="width:100%; height:625px;">
+      <h2>FIND SOLACE IN SOLITUDE</h2>
+      <h5>An escape from the mundane. February 15, 2022</h5>
+      <div>
+      <img src="../Website/Images/h22.jpg" style="height:auto; width:75%;">
+      <p>It was last year since I decided to go on a run. I don't know, I just decided to be physically active. What I did not know was how much wonder and solace I found and <i>still</i> find when I go out for a run. Eventually a run conceded into a jog, a jog slowed its pace and became a mere walk, until a walk halts into a stop. A stop that I did not realize would bring me a moment of clarity. <b><u style="color:#3d5a80; cursor:pointer;">Read More...</u></b>
+      </p>
+      </div>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card" style="width:100%; height:420px;">
+      <h2>About Me</h2>
+      <div>
+      <img src="../Website/Images/am.jpg" style="height:270px; width:auto;">
+      <center>
+      <span><br>A <i>leo</i> sun and a <i>capricorn</i> moon.</span> </center>
+      </div>
+    </div>
+    <div class="card" style="width:100%; height:580px;">
+      <h3>Latest Post</h3>
+      <div>
+      <img src="../Website/Images/lp.jpg" style="width:auto; height:475px;">
+      </div>
+    </div>
+    <div class="card" style="padding-top:10px;">
+      <h3>Follow Me</h3>
+      <p>Socials:<br>&ensp;&ensp;&ensp;@vicbontia</p>
+      <p>Email:<br>&ensp;&ensp;&ensp;vicdanielleyoo@gmail.com</p>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>All Rights Reserved © 2022</h2>
+  <div style="font-size:18px;">Vic Danielle L. Bontia<br>BSCpE 3A DAY</div>
+</div>
+
+</body>
+</html>
+
+
